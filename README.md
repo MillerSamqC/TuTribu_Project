@@ -1,4 +1,4 @@
-<div align="center"><img src="/images/tutribu.png" alt="Logo tutribu" width="100%"></div>
+<div align="center"><img src="/images/tutribu.png" alt="Logo tutribu" width="750%"></div>
 
 <div align="center">
 	<h1 style="color:Tomato;"><strong>Project TuTribu</strong></h1>
