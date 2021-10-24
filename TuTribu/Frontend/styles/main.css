@@ -1,0 +1,111 @@
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+.login-design {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 100vh;
+}
+
+.waves {
+    background-color: rgb(219, 224, 222);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.login {
+    background-color: rgb(219, 224, 222);
+    display:flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.login-data{
+    border: none;
+    text-align: center;
+    width: 65%;
+    height: 80%;
+    background-color: rgb(246, 250, 249);
+}
+
+.login-data h1{
+    font-weight: 200;
+}
+
+.input-group{
+    position: relative;
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.input-fill{
+    border: none;
+    border-bottom: 3px solid rgb(68, 68, 70);
+    width: 100%;
+    height: 2rem;
+    font-size: 1.0625rem;
+    padding-left: 0.875rem;
+    line-height: 147.6%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.input-fill input:focus{
+    outline: none;
+    border-color: slateblue;
+}
+
+.input-fill input:hover{
+    background-color: #e9ecef;
+}
+
+.input-fill input focus + .input-label{
+    top: 0;
+    margin-bottom: 3rem;
+    color: slateblue;
+}
+
+.input-fill .input-label{
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    line-height: 147.6%;
+    color: gray;
+    transition: top 0.2s;
+    font-weight: 700;
+}
+
+.login-form a {
+    display: block;
+    width: 85%;
+    text-align: right;
+    text-decoration: none;
+    color: #848f9a;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    transition: 0.3s ease-in-out all;
+    font-size: 18px;
+}
+
+.btn-login {
+    border-radius: 3rem;
+    width: 45%;
+    line-height: 1.6rem;
+    font-size: 1.3rem;
+    background-color: slategrey;
+    color: snow;
+    padding: 0.5rem 0;
+    transition: .3s ease-in-out all;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: slategrey;
+}
