@@ -9,7 +9,7 @@
   Ferney Francisco Roa Huertas<br>
   Miller Alexander Quiroga Campos<br>
 </div>
-
+<br>
 <div align="center">
   Los medios de comunicación masivos facilitaron la eliminación de las barreras físicas en las influencias culturales a nivel mundial y este hecho fomentó la           convivencia cultural entre personas con afinidades diversas. <P>
 
