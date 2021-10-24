@@ -2,7 +2,7 @@
 
 <div align="center">
 	<h1 style="color:Tomato;"><strong>Project TuTribu</strong></h1>
-	<strong>Hecho por:</strong> Carolina Bustos Cáceres<br>
+	<strong>Realizado por:</strong> Carolina Bustos Cáceres<br>
   Sonia Alexandra Moreno Roncancio<br>
   Giovanny Guzmán<br>
   Héctor Eduardo Astudiilo<br>
