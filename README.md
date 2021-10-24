@@ -16,6 +16,8 @@
   Pero al mundo le hacía falta una red social que les permitiera agruparse, conocerse, reunirse y encontrar artículos de su interés.
 </div>
 
+	
+<br><hr>
 El backend de TuTribu se representa mediante el siguiente diagrama UML:
 
 <div align="center"><img src="/image/UML.png" alt="DiagramaUML"></div>
