@@ -72,7 +72,7 @@ class Comentario(models.Model):
     contenido = models.TextField()
 
     def __str__(self):
-        return self.idPost
+        return str(self.idPost)
 
 class Evento(models.Model):
     nuevo_Evento = models.CharField(max_length=100)
