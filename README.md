@@ -4,7 +4,7 @@
 	<h1 style="color:Tomato;"><strong>Project TuTribu</strong></h1>
 	<strong>Realizado por:</strong> Carolina Bustos Cáceres<br>
   Sonia Alexandra Moreno Roncancio<br>
-  Giovanny Guzmán<br>
+  Giovanny Guzmán Ramírez<br>
   Héctor Eduardo Astudiilo<br>
   Ferney Francisco Roa Huertas<br>
   Miller Alexander Quiroga Campos<br>
