@@ -20,4 +20,4 @@
 <br><hr>
 El backend de TuTribu se representa mediante el siguiente diagrama UML:
 
-<div align="center"><img src="/image/UML.png" alt="DiagramaUML"></div>
+<div align="center"><img src="/image/UML.jpg" alt="DiagramaUML"></div>
