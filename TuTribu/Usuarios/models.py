@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from django.db.models.fields import IntegerField
 from django.db.models.fields.files import ImageField
+from Tribus.models import Tribu
 
 
 class Perfil (models.Model):
@@ -16,7 +17,7 @@ class Perfil (models.Model):
     edad = models.IntegerField(blank = True, null = True)
     telefono = models.CharField(max_length = 10)
     avatar = ImageField()
-    #tribu = models.CharField(max_length=200)
+    tribu = models.ManyToManyField(Tribu)
 
     def __str__(self):
         return self.usuario.email
