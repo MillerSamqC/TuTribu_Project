@@ -1,10 +1,10 @@
-<div align="center"><img src="/images/tutribu.png" alt="Logo tutribu"></div>
+<div align="center"><img src="/images/tutribu.png" alt="Logo tutribu" width="750%"></div>
 
 <div align="center">
 	<h1 style="color:Tomato;"><strong>Project TuTribu</strong></h1>
 	<strong>Realizado por:</strong> Carolina Bustos Cáceres<br>
   Sonia Alexandra Moreno Roncancio<br>
-  Giovanny Guzmán<br>
+  Giovanny Guzmán Ramírez<br>
   Héctor Eduardo Astudiilo<br>
   Ferney Francisco Roa Huertas<br>
   Miller Alexander Quiroga Campos<br>
@@ -20,4 +20,4 @@
 <br><hr>
 El backend de TuTribu se representa mediante el siguiente diagrama UML:
 
-<div align="center"><img src="/image/UML.png" alt="DiagramaUML"></div>
+<div align="center"><img src="/image/UML.jpg" alt="DiagramaUML"></div>
