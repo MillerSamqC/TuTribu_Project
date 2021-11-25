@@ -1,0 +1,111 @@
+/* clases del primer menu */
+
+:host {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #525252;
+    padding: 0.5rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 10rem;
+    margin-right: 6.5rem;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-left ul li img {
+    width: 2.8rem;
+    margin: 0 1.5rem;
+}
+
+.nav-user-icon img {
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-user-icon {
+    margin-left: 3rem;
+}
+
+.search-box {
+    background: #efefef;
+    width: 15rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.search-box img {
+    width: 1.8rem;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 1rem;
+    outline: none;
+    border: 0;
+}
+
+
+/* clases del segundo menu */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+.b-example-divider {
+    height: 1rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.form-control-dark {
+    color: rgb(23, 182, 63);
+    background-color: var(--bs-dark);
+    border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+    color: #fff;
+    background-color: var(--bs-dark);
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+.dropdown-toggle {
+    outline: 0;
+}
