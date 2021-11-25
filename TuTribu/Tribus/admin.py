@@ -11,4 +11,6 @@ admin.site.register(Reaccion)
 admin.site.register(ReaccionPost)
 admin.site.register(Comentario)
 admin.site.register(Tribu)
+admin.site.register(AvatarNT)
+admin.site.register(AperturaVotacion)
 

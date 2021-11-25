@@ -34,3 +34,13 @@ class EventoSerial(serializers.ModelSerializer):
     class Meta:
         model = Evento
         fields = '__all__'
+
+class AvatarNTSerial(serializers.ModelSerializer):
+    class Meta:
+        model = AvatarNT
+        fields = '__all__'
+
+class AperturaVotacionSerial(serializers.ModelSerializer):
+    class Meta:
+        model = AperturaVotacion
+        fields = '__all__'

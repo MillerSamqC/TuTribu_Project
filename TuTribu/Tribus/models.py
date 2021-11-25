@@ -1,7 +1,9 @@
 from django.db import models
+from django.db.models.deletion import CASCADE
 from django.db.models.fields import CharField, IntegerField
 from django.db.models import base
-
+from django.utils import timezone
+import datetime
 
 # Create your models here.
 class Tribu(models.Model):
@@ -93,3 +95,41 @@ class Locacion(models.Model):
 
 class ChatsPV(models.Model):
     pass
+
+class AvatarNT(models.Model):
+    nombre = models.CharField(max_length=100)
+    foto = models.ImageField(null = True, blank = True)
+
+    def __str__(self):
+        return self.nombre
+
+class AperturaVotacion(models.Model):
+    nombre = models.CharField(max_length=100)
+    imagen = models.ImageField(null = True, blank = True)
+    descripcion = models.CharField(max_length=300)
+    numVotos = models.IntegerField(default = 0)
+    fecha_Apertura = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    avatar = models.ForeignKey(AvatarNT, on_delete=CASCADE, blank=True, null=True)
+    status = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nombre + str(self.fecha_Apertura)
+
+    def numVotos(self):
+        self.numVotos +=1
+        self.save()
+
+    def compEstado(self):
+        fecha_Cierre = self.fecha_Apertura + datetime.timedelta(days = 2)
+        tiempo_Restante = fecha_Cierre - self.fecha_Apertura
+
+        if tiempo_Restante<datetime.timedelta(days=0):
+            self.status=False
+
+        print(tiempo_Restante)
+        
+
+
+    
+
+    

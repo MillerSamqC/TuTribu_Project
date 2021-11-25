@@ -14,6 +14,8 @@ router.register('reaccionpost', ReaccionPostAPI)
 router.register('evento', EventoAPI)
 router.register('comentario', ComentarioAPI)
 
+
 urlpatterns = [
-    path('crud/', include(router.urls))
+    path('crud/', include(router.urls)),
+    path('crud/Votacion/<int:id>', Votacion_detail)
 ]
