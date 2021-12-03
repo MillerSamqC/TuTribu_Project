@@ -7,6 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderMarketplaceComponent } from './components/header-marketplace/header-marketplace.component';
 import { HeaderTribusInternaComponent } from './components/header-tribus-interna/header-tribus-interna.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { HeaderTribusInternaComponent } from './components/header-tribus-interna
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FontAwesomeModule
   ],
   exports: [
     HeaderComponent,

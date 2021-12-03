@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-tribus-interna',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tribus-interna.component.scss']
 })
 export class TribusInternaComponent implements OnInit {
+
+  faCaretDown = faCaretDown;
 
   constructor() { }
 

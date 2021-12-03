@@ -1,1 +1,81 @@
-<p>tribus-interna works!</p>
+<div class="container">
+
+    <div class="left-sidebar">
+        <app-options></app-options>
+    </div>
+
+    <div class="main-content">
+
+        <div class="marketplace-gallery">
+            <div class="gallery producto1">
+                <img src="./../../../../assets/Imagenes/sello.png" alt="">
+                <p>Hechos por madres cabeza de familia</p>
+            </div>
+            <div class="gallery producto2">
+                <img src="./../../../../assets/Imagenes/sello.png" alt="">
+                <p>Fundación</p>
+            </div>
+            <div class="gallery producto3">
+                <img src="./../../../../assets/Imagenes/sello.png" alt="">
+                <!-- <p>Hecho por madres cabeza de familia</p> -->
+            </div>
+            <div class="gallery producto4">
+                <img src="./../../../../assets/Imagenes/sello.png">
+                <!-- <p>Materiales ecologicos</p> -->
+            </div>
+        </div>
+
+        <div class="write-post-container">
+            <div class="user-profile">
+                <img src="./../../../../assets/Imagenes/carolina.jpg" alt="">
+                <div>
+                    <p>Carolina Bustos Caceres</p>
+                    <small>Bogota <fa-icon [icon]="faCaretDown"></fa-icon></small>
+                </div>
+            </div>
+
+            <div class="post-input-container">
+                <div class="event-details">
+                    <p>Titulo del evento</p>
+                </div>
+
+                <textarea rows="3" placeholder="Crea un evento"></textarea>
+
+                <div class="add-post-links">
+                    <a href="#"><img src="./../../../../assets/Imagenes/yes.png" alt=""> Voy</a>
+                    <a href="#"><img src="./../../../../assets/Imagenes/maybe.png" alt=""> De pronto</a>
+                    <a href="#"><img src="./../../../../assets/Imagenes/no.png" alt=""> No puedo</a>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="user-profile">
+                    <img src="./../../../../assets/Imagenes/sonia.jpg" alt="">
+                    <div>
+                        <p>Sonia</p>
+                        <span>Octubre 15 2021, 2:00 pm</span>
+                    </div>
+                </div>
+
+                <p class="hashtag">Que restaurante petfriendly me recomiendan para ir hoy a almorzar? Quien se une? <a href="#">#VamosTodos</a></p>
+
+                <img src="./../../../../assets/Imagenes/dogs-welcome_.jpg" class="post-img" alt="">
+
+                <div class="post-raw">
+                    <div class="activity-icons">
+                        <div><img src="./../../../../assets/Imagenes/like_.png" alt=""> 120</div>
+                        <div><img src="./../../../../assets/Imagenes/reply_.png" alt=""> 45</div>
+                        <div><img src="./../../../../assets/Imagenes/save_.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./../../../../assets/Imagenes/carolina.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-sidebar">
+        <app-summary></app-summary>
+    </div>
+</div>
