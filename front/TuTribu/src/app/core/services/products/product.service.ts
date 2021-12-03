@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from '../../../product.model';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-marketplace',
-  templateUrl: './marketplace.component.html',
-  styleUrls: ['./marketplace.component.scss']
+import { Product } from './../../../product.model';
+
+@Injectable({
+  providedIn: 'root'
 })
-export class MarketplaceComponent implements OnInit {
-
-  /*@Input() product!: Product;*/
+export class ProductService {
 
   products: Product[] = [
     {
@@ -74,7 +71,7 @@ export class MarketplaceComponent implements OnInit {
       offerPrice: 28_900,
       description: 'bla bla bla bla bla bla bla bla bla bla'
     },
-    /*{
+    {
       id: '8',
       image: './../../../../assets/lampara2.jpg',
       title: 'Luz Linterna Bicicleta Delantera Zoom 1000lm Indicadoras',
@@ -82,19 +79,18 @@ export class MarketplaceComponent implements OnInit {
       price: 35_000,
       offerPrice: 28_900,
       description: 'bla bla bla bla bla bla bla bla bla bla'
-    },*/
+    },
   ];
 
   constructor() {
     //
+   }
+
+  getAllProducts() {
+    return this.products;
   }
 
-  ngOnInit(): void {
-    //
-  }
-
-  clickProduct(id: number) {
-    console.log("Product");
-    console.log(id);
+  getProduct(id: string) {
+    return this.products.find(item => item.id === id);
   }
 }

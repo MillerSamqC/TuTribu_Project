@@ -26,22 +26,22 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'marketplace',
-    component: LayoutMarketplaceComponent,
-    children: [
-      {
-        path: '',
-        loadChildren: () => import('./marketplace/marketplace.module').then(m => m.MarketplaceModule)
-      },
-    ]
-  },
-  {
     path: 'internal-tribes',
     component: LayoutTribusInternaComponent,
     children: [
       {
         path: '',
         loadChildren: () => import('./tribus-interna/tribus-interna.module').then(m => m.TribusInternaModule)
+      }
+    ]
+  },
+  {
+    path: 'marketplace',
+    component: LayoutTribusInternaComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./marketplace/marketplace.module').then(m => m.MarketplaceModule)
       }
     ]
   },

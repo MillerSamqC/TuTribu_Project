@@ -7,7 +7,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { LayoutMarketplaceComponent } from './layout-marketplace/layout-marketplace.component';
 
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+
 import { LayoutTribusInternaComponent } from './layout-tribus-interna/layout-tribus-interna.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { LayoutTribusInternaComponent } from './layout-tribus-interna/layout-tri
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    CoreModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

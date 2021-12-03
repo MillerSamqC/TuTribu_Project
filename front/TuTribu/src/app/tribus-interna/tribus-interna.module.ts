@@ -5,7 +5,7 @@ import { TribusInternaComponent } from './components/tribus-interna/tribus-inter
 import { SummaryComponent } from './components/summary/summary.component';
 import { TribusIntenaRoutingModule } from './tribus-interna-routing.module';
 
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { TribusIntenaRoutingModule } from './tribus-interna-routing.module';
   ],
   imports: [
     CommonModule,
-    TribusIntenaRoutingModule
+    TribusIntenaRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class TribusInternaModule { }
