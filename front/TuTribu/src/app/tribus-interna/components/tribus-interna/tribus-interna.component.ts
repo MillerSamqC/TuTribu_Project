@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { faShareAlt} from '@fortawesome/free-solid-svg-icons'; 
 
 @Component({
   selector: 'app-tribus-interna',
