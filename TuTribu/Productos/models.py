@@ -28,6 +28,8 @@ class Producto(models.Model):
     descripcion = models.TextField(null=True, blank=True)
     stock = models.FloatField(null=True, blank=True)
     prodImagen= models.ImageField(null=True, blank=True)
+    IsFeatured = models.BooleanField(default=False) 
+    dateAdded = models.DateField(auto_now_add=True)
 
     def __srt__(self):
         return self.prodNombre + " - " + self.precio
