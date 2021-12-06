@@ -14,12 +14,11 @@ export class ProductComponent implements OnInit {
   @Output()
   productCliked: EventEmitter<any> = new EventEmitter();
 
-  constructor() {
+  constructor( ) {
     //
   }
 
   ngOnInit(): void {
-    //
   }
 
   addCart() {

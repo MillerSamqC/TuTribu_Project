@@ -1,0 +1,76 @@
+.post-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.post-container p {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.user-profile {
+    font-size: 13px;
+    color: #9a9a9a;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile small {
+    font-size: 12px;
+}
+
+.hashtag a {
+    color: #f1bc5e;
+    text-decoration: none;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.post-raw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.activity-icons div img {
+    width: 18;
+    margin-right: 10px;
+}
+
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icon img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}

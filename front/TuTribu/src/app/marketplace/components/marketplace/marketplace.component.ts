@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../../product.model';
 
+import { ProductService } from './../../../core/services/products/product.service';
+
 @Component({
   selector: 'app-marketplace',
   templateUrl: './marketplace.component.html',
@@ -10,7 +12,8 @@ export class MarketplaceComponent implements OnInit {
 
   /*@Input() product!: Product;*/
 
-  products: Product[] = [
+  products: Product[] = [];
+    /*
     {
       id: '1',
       image: './../../../../assets/casco.jpg',
@@ -74,7 +77,7 @@ export class MarketplaceComponent implements OnInit {
       offerPrice: 28_900,
       description: 'bla bla bla bla bla bla bla bla bla bla'
     },
-    /*{
+    {
       id: '8',
       image: './../../../../assets/lampara2.jpg',
       title: 'Luz Linterna Bicicleta Delantera Zoom 1000lm Indicadoras',
@@ -83,18 +86,25 @@ export class MarketplaceComponent implements OnInit {
       offerPrice: 28_900,
       description: 'bla bla bla bla bla bla bla bla bla bla'
     },*/
-  ];
 
-  constructor() {
-    //
-  }
+
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
-    //
+    this.fetchProducts();
   }
 
   clickProduct(id: number) {
     console.log("Product");
     console.log(id);
+  }
+
+  fetchProducts() {
+    this.productService.getAllProducts()
+    .subscribe(products => {
+      this.products = products;
+    });
   }
 }

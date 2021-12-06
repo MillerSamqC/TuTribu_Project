@@ -6,12 +6,16 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { TribusIntenaRoutingModule } from './tribus-interna-routing.module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrandsComponent } from './components/brands/brands.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
     OptionsComponent,
     TribusInternaComponent,
-    SummaryComponent
+    SummaryComponent,
+    BrandsComponent,
+    PostComponent
   ],
   imports: [
     CommonModule,

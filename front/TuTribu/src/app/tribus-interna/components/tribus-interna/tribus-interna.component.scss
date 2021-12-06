@@ -19,55 +19,6 @@
     color: #626262;
 }
 
-.marketplace-gallery {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.producto1 {
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0)), url(./../../../../assets/Imagenes/color-esperanza.jpg);
-}
-
-.producto2 {
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0)), url(./../../../../assets/Imagenes/chaleco.jpg);
-}
-
-.producto3 {
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.1)), url(./../../../../assets/Imagenes/collar.jpg);
-}
-
-.producto4 {
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3)), url(./../../../../assets/Imagenes/dog-father.jpg);
-}
-
-.gallery {
-    flex-basis: 18%;
-    padding-top: 32%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
-
-.gallery img {
-    position: absolute;
-    width: 45px;
-    border-radius: 50%;
-    top: -15px;
-    left: -10px;
-    border: 2px solid #f1bc5e;
-}
-
-.gallery p {
-    position: absolute;
-    top: 23px;
-    width: 100%;
-    text-align: center;
-    color: #525252;
-    font-size: 14px;
-}
-
 .write-post-container {
     width: 100%;
     background: #fff;
@@ -130,58 +81,4 @@
 .add-post-links img {
     width: 20px;
     margin-right: 10px;
-}
-
-.post-container {
-    width: 100%;
-    background: #fff;
-    border-radius: 6px;
-    padding: 20px;
-    color: #626262;
-    margin: 20px 0;
-}
-
-.post-container p {
-    font-size: 13px;
-    margin-top: 15px;
-}
-
-.hashtag a {
-    color: #f1bc5e;
-    text-decoration: none;
-}
-
-.post-img {
-    width: 100%;
-    border-radius: 2px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.post-raw {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.activity-icons div {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 30px;
-}
-
-.activity-icons div img {
-    width: 18;
-    margin-right: 10px;
-}
-
-.post-profile-icon {
-    display: flex;
-    align-items: center;
-}
-
-.post-profile-icon img {
-    width: 20px;
-    border-radius: 50%;
-    margin-right: 5px;
 }
