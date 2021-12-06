@@ -12,6 +12,7 @@ import { CoreModule } from './core/core.module';
 import { LayoutTribusInternaComponent } from './layout-tribus-interna/layout-tribus-interna.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+
 @NgModule({
   declarations: [
     AppComponent,
