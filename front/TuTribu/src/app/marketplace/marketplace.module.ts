@@ -8,6 +8,7 @@ import { BootstrapIconsModule } from 'ng-bootstrap-icons';
 import { StarFill } from 'ng-bootstrap-icons/icons';
 
 import { MartketplaceRoutingModule } from './marketplace-routing.module';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 const icons = {
   StarFill
@@ -16,7 +17,8 @@ const icons = {
 @NgModule({
   declarations: [
     MarketplaceComponent,
-    ProductComponent
+    ProductComponent,
+    ProductDetailComponent
   ],
   imports: [
     CommonModule,
