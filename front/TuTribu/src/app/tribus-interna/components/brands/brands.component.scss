@@ -1,0 +1,48 @@
+.marketplace-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.gallery img {
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: -15px;
+    left: -10px;
+    border: 2px solid #f1bc5e;
+}
+
+.gallery p {
+    position: absolute;
+    top: 23px;
+    width: 100%;
+    text-align: center;
+    color: #525252;
+    font-size: 14px;
+}
+
+.producto1 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0)), url(./../../../../assets/Imagenes/color-esperanza.jpg);
+}
+
+.producto2 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0)), url(./../../../../assets/Imagenes/chaleco.jpg);
+}
+
+.producto3 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.1)), url(./../../../../assets/Imagenes/collar.jpg);
+}
+
+.producto4 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3)), url(./../../../../assets/Imagenes/dog-father.jpg);
+}

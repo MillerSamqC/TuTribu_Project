@@ -28,9 +28,10 @@ class Producto(models.Model):
     descripcion = models.TextField(null=True, blank=True)
     stock = models.FloatField(null=True, blank=True)
     prodImagen= models.ImageField(null=True, blank=True)
+    imagenUrl = models.CharField(max_length=200, default='assets/logo2.jpg')
 
-    def __srt__(self):
-        return self.prodNombre + " - " + self.precio
+    def __str__(self):
+        return self.prodNombre + " - " + str(self.precio)
 
     def agregarProducto(self, producto):
         self.producto_lista.append(producto)

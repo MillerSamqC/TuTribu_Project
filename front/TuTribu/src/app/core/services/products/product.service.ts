@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 import { Product } from './../../../product.model';
+import { environment } from './../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
+/*
   products: Product[] = [
+
     {
       id: '1',
       image: './../../../../assets/casco.jpg',
@@ -81,16 +85,21 @@ export class ProductService {
       description: 'bla bla bla bla bla bla bla bla bla bla'
     },
   ];
+  */
 
-  constructor() {
+  constructor(
+    private http: HttpClient
+  ) {
     //
    }
 
   getAllProducts() {
-    return this.products;
+    /*return this.products;*/
+    return this.http.get<Product[]>(`${environment.url_api}/productos/api/crud/productos/`);
   }
 
   getProduct(id: string) {
-    return this.products.find(item => item.id === id);
+    //return this.products.find(item => item.id === id);
+    return this.http.get<Product>(`${environment.url_api}/productos/api/crud/productos/${id}`);
   }
 }
