@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { OptionsComponent } from './components/options/options.component';
 import { TribusInternaComponent } from './components/tribus-interna/tribus-interna.component';
 import { SummaryComponent } from './components/summary/summary.component';
+import { NuevasTribusComponent } from './components/nuevas-tribus/nuevas-tribus.component';
 import { TribusIntenaRoutingModule } from './tribus-interna-routing.module';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -15,12 +16,13 @@ import { PostComponent } from './components/post/post.component';
     TribusInternaComponent,
     SummaryComponent,
     BrandsComponent,
-    PostComponent
+    PostComponent,
+    NuevasTribusComponent,
   ],
   imports: [
     CommonModule,
     TribusIntenaRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ]
 })
 export class TribusInternaModule { }

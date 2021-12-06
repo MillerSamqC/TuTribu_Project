@@ -14,6 +14,7 @@ import { LayoutTribusInternaComponent } from './layout-tribus-interna/layout-tri
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
